@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, html{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'poppins',sans-serif;
+        background-color: #ebebeb;
+    }
+    .logotoko{
+        width: 80px;
+    }
+    .header a{
+        font-weight: 600;
+        color: rgb(57, 53, 53);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 15px;
+    }
+    .menu {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li {
+        list-style: none;
+        padding: 20px;
+        font-size: 20px;
+        
+    }
+    .navbar ul li a{
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(69, 73, 110);
+    }
+    .navbar{
+        background-color: rgb(255, 255, 255);
+        border: 0px solid black;
+        width: 10%;
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+    .content{ padding: 20px;
+        border: 0 solid black;
+        width: 88%;
+        height: 40vh;
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        
+    }
+    .content img{
+        width: 160px;
+        
+    }
+    .card3{
+        background-color: rgb(255, 255, 255);
+        border: 0 solid rgb(139, 139, 139);
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-around;
+        width: 500px;
+        height: 250px;
+        padding: 10px 10px 10px 10px;
+        color: rgb(64, 64, 64);
+        display:flex;
+        box-shadow: 0 0px 4px rgba(2, 5, 6, 0.9);
+    }
+    .card large{
+        font-weight: 600;
+    }
+    .keterangan{
+        padding:0px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img src="gambar/logotoko.jpg" alt="logo toko" class="logotoko"> EFZI CREATOR</a>
+    </header><br>
+    <div class="menu">
+        <nav class="navbar">
+            <ul>
+                <li class="kotak"><a href="#">Home</a></li>
+                <li><a href="#">Majalah</a></li>
+                <li><a href="#">Koran</a></li>
+                <li><a href="#">Buku</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="card3">
+            <img src="https://aktual.com/wp-content/uploads/2017/10/Majalah-Indonesia-Tatler-681x911.jpg">
+            <div class="keterangan">
+                <h4>Man of The Year</h4><br>
+                <small>2015</small><br>
+                <small><del>75.000</del></small>
+                <small style="font-weight: bold;">Rp35.000</small>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

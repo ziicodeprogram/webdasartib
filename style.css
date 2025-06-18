@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.logo a img{
+    width: 100px;
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+}
+.navbar{
+    margin: 0;
+	padding: 20px 30px;
+    background-color: rgb(79, 79, 79);
+}
+.container{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu{
+    margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+.menu li{
+    list-style: none;
+    padding-left: 0;
+	margin-right: 10px;
+}
+.menu li a{
+    padding:10px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	display: inline-block;
+}
