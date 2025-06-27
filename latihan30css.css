@@ -1,0 +1,364 @@
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    }
+    body{
+           width: 100%;
+           height: 100vh; 
+    }
+    .logo{
+        width: 60px;
+    }
+    .cc{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+    .navbar-main {
+    background: rgb(255, 255, 255);
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .navbar-main .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    }
+
+.navbar-main .menu > li {
+    position: relative;
+    display: flex;
+}
+
+.navbar-main .menu > li > a {
+    display: block;
+    padding: 18px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: 'poppins',Georgia, serif;
+    text-decoration: none;
+}
+
+.navbar-main .menu > li:hover > a {
+    color: #333;
+}
+.navbar-main .menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+.navbar-main .menu li:hover > ul {
+    display: block;
+}
+
+.navbar-main .menu li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    background: #f9f9f9;
+}
+
+.navbar-main .menu li ul li a:hover {
+    background: #ddd;
+}
+
+.navbar-main .menu li ul li {
+    position: relative;
+}
+
+.navbar-main .menu li ul li ul {
+    top: 0;
+    left: 100%;
+}
+
+    
+ 
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        border: 0px solid black;
+    }
+    .header a{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 29, 132);
+    }
+    .search-form{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .input-form{
+        margin: 10px;
+        border-radius: 50px;
+        width: 500px;
+        height: 50px;
+        padding: 20px;
+    }
+    .buttom-search{
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: none;
+    }
+    .header i{
+        font-size: 30px;
+    }
+    .masuk{
+        width: 90px;
+        height: 50px;
+        border: 1px solid rgb(186, 186, 186);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        transition-duration: 300ms;
+    }
+    .masuk2{
+        width: 90px;
+        height: 50px;
+        border: 1px solid rgb(186, 186, 186);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        background-color: rgb(0, 0, 124);
+        transition-duration: 300ms;
+    }
+    .masuk a{
+        font-size: 15px;
+        transition-duration: 300ms;
+    }
+    .masuk a:hover{
+        color: aliceblue;
+    }
+    .masuk:hover{
+        color: aliceblue;
+        background-color: rgb(0, 0, 124);
+    }
+    .masuk2 a{
+        font-size: 15px;
+        color: aliceblue;
+    }
+    .masuk2 a:hover{
+        color: rgb(0, 0, 124)
+    }
+    .masuk2:hover{
+        background-color: white;
+    }
+    .masuk-daftar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .navbar{
+        width: 100%;
+        height: 30px;
+        border: 1px solid rgb(167, 167, 167);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar{
+        width: 100%;
+        height: 30px;
+        border: 1px solid rgb(167, 167, 167);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        transition-duration: 300ms;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 124);
+    }
+    .navbar a:hover{
+        border-bottom: 1px solid rgb(70, 70, 70);
+        color: rgb(82, 82, 82);
+    }.card-buku{
+        width: 170px;
+        height: 280px;
+        border: 1px solid rgb(200, 200, 200);
+        border-radius: 10px;
+        margin: 10px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .card-buku:hover{
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .detail{
+        border: 1px solid black;
+        width: 60px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: black;
+        margin-left: 3px;
+    }
+    .detail a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }  
+    .dtl{
+        display: flex;
+        padding: 5px;
+    }
+    .buku-laris{
+        width: 150px;
+    }.buku-terlaris{
+        width: 100%;
+        height: 350px;
+        border: 0px solid black;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }.judul1{
+        padding-top: 150px;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        border: 0px solid black;
+        justify-content: center;
+        align-items: center; 
+     }.judul1 a{
+        color: rgb(68, 68, 68);
+    
+    }.judul a{
+        color: rgb(68, 68, 68);
+    }
+    .judul1 h2{
+        width: 70%;
+        height: 30px;
+        font-size: 22px
+    }.judul{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        border: 0px solid black;
+        justify-content: center;
+        align-items: center;
+    }.judul h2{
+        width: 70%;
+        height: 30px;
+        font-size: 22px
+    }
+    .Koran-terlaris{
+        width: 100%;
+        height: 420px;
+        border: 0px solid rgb(176, 176, 176);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card-koran{
+        width: 400px;
+        height: 350px;
+        border: 1px solid rgb(167, 167, 167);
+        border-radius: 10px;
+        margin: 10px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .card-koran:hover{
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }.blog{
+        width: 400px;
+        border-radius: 5px ;
+    }
+    .Koran-terlaris h4{
+        padding: 10px;
+    }
+    .Koran-terlaris p{
+        padding: 10px;
+        font-size: 11px;
+    }.header-bawah{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        border: 1px solid rgb(187, 187, 187);
+    }
+    .header-bawah a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 0, 124)   ;
+    }
+    .header-bawah p{
+        font-weight: 500;
+    }
+    .tootler{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
+    .isi{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 0px solid black;
+        display: flex;
+        justify-content: start  ;
+        align-items: start;
+        flex-direction: column;
+    }
+    .isi a{
+        padding: 2px;
+        color: black;
+        font-size: 13px;
+    }
+    .blog2{
+        width: 400px;
+        border-radius: 5px ;
+        height: 212px;
+    }
