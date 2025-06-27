@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+    <link rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    }
+    body{
+           width: 100%;
+           height: 100vh; 
+    }
+    .logo{
+        width: 60px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around 70%;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        border: 0px solid black;
+    }
+    .header a{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 29, 132);
+    }
+    .search-form{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .input-form{
+        margin: 10px;
+        border-radius: 50px;
+        width: 500px;
+        height: 50px;
+        padding: 20px;
+    }
+    .buttom-search{
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: none;
+    }
+    .header i{
+        font-size: 30px;
+    }
+    .masuk{
+        width: 90px;
+        height: 50px;
+        border: 1px solid rgb(186, 186, 186);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        transition-duration: 300ms;
+    }
+    .masuk2{
+        width: 90px;
+        height: 50px;
+        border: 1px solid rgb(186, 186, 186);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        background-color: rgb(0, 0, 124);
+        transition-duration: 300ms;
+    }
+    .masuk a{
+        font-size: 15px;
+        transition-duration: 300ms;
+    }
+    .masuk a:hover{
+        color: aliceblue;
+    }
+    .masuk:hover{
+        color: aliceblue;
+        background-color: rgb(0, 0, 124);
+    }
+    .masuk2 a{
+        font-size: 15px;
+        color: aliceblue;
+    }
+    .masuk2 a:hover{
+        color: rgb(0, 0, 124)
+    }
+    .masuk2:hover{
+        background-color: white;
+    }
+    .masuk-daftar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .navbar{
+        width: 100%;
+        height: 30px;
+        border: 1px solid rgb(167, 167, 167);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        transition-duration: 300ms;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 124);
+    }
+    .navbar a:hover{
+        border-bottom: 1px solid rgb(70, 70, 70);
+        color: rgb(82, 82, 82);
+    }
+    .content{
+        width: 100%;
+        height: 65vh;
+        border: 0px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1{
+        width: 750px;
+        height: 455px;
+        border: 1px solid rgb(175, 175, 175);
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .card2{
+        width: 450px;
+        height: 225px;
+        border: 1px solid rgb(189, 189, 189);
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .iklan1{
+        width: 750px;
+        height: 455px;
+        border-radius: 10px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .category{
+        border: 0px solid black;
+        margin: 10px;
+        width: 100%;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-category{
+        width: 140px;
+        height: 160px;
+        border: 1px solid rgb(208, 208, 208);
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-category:hover{
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .card-category2{
+        width: 140px;
+        height: 160px;
+        border: 0px solid black;
+        border-radius: 10px;
+        margin: 20px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-category2:hover{
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .judul{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        border: 0px solid black;
+        justify-content: center;
+        align-items: end;
+    }
+    .judul h2{
+        width: 70%;
+        height: 30px;
+        font-size: 22px
+    }
+    .iklan3{
+        width: 100%;
+        height: 30vh;
+        border: 0px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .banner-iklan{
+        width: 1255px;
+        border-radius: 10px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .buku-terlaris{
+        width: 100%;
+        height: 350px;
+        border: 0px solid black;
+        display: flex;
+        justify-content:center;
+        align-items: center; 
+        
+    }
+    .card-buku{
+        width: 170px;
+        height: 280px;
+        border: 1px solid rgb(200, 200, 200);
+        border-radius: 10px;
+        margin: 10px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .card-buku:hover{
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .Koran-terlaris{
+        width: 100%;
+        height: 420px;
+        border: 0px solid rgb(176, 176, 176);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card-koran{
+        width: 400px;
+        height: 350px;
+        border: 1px solid rgb(167, 167, 167);
+        border-radius: 10px;
+        margin: 10px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .card-koran:hover{
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .header-bawah{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        border: 1px solid rgb(187, 187, 187);
+    }
+    .header-bawah a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 0, 124)   ;
+    }
+    .header-bawah p{
+        font-weight: 500;
+    }
+    .tootler{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
+    .isi{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 0px solid black;
+        display: flex;
+        justify-content: start  ;
+        align-items: start;
+        flex-direction: column;
+    }
+    .isi a{
+        padding: 2px;
+        color: black;
+        font-size: 13px;
+    }
+    .logo-pin{
+        width: 100px;
+    }
+    .card-category2 a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(81, 81, 81);
+        text-decoration: none;
+    }
+    .card-category a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: rgb(81, 81, 81);
+        text-decoration: none;
+    }
+    .judul a{
+        color: rgb(68, 68, 68);
+    }
+    .buku-laris{
+        width: 150px;
+    }
+    .blog{
+        width: 400px;
+        border-radius: 5px ;
+    }
+    .Koran-terlaris h4{
+        padding: 10px;
+    }
+    .Koran-terlaris p{
+        padding: 10px;
+        font-size: 11px;
+    }
+    .banner-iklan2{
+        width: 450px;
+        height: 225px;
+        border-radius: 10px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <a href="#"><img src="gambar/PP transparent.png" alt="logotoko" class="logo">EFZI BOOK</a>
+                <form action="/search" method="get" class="search-form">
+                    <input class="input-form" type="search" name="query" placeholder="Cari sesuatu...">
+                    <button class="buttom-search" type="submit"><i class='bx bx-search-alt-2'></i></button>
+                  </form>
+            <div class="masuk-daftar">
+                  <div class="masuk">
+                    <a href="#">Masuk</a>
+                  </div>
+                  <div class="masuk2">
+                    <a href="#">Daftar</a>
+                  </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Buku</a>
+            <a href="#">Majalah</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="content">
+            <div class="card1">
+                <a href="#"><img src="gambar/iklan1.png" class="iklan1"></a>
+            </div>
+            <div>
+            <div class="card2">
+                <a href="#"><img src="gambar/bnr Filosofi Teras.png" class="banner-iklan2"></a>
+            </div>
+            <div class="card2">
+                <a href="#"><img src="gambar/bnr fyp.png" class="banner-iklan2"></a>
+            </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="card-category2">
+                <a href="#"><img src="gambar/serba 5 ribu.png" class="logo-pin">Serba 5 Ribu!</a>
+            </div>
+            <div class="card-category2">
+                <a href="#"><img src="gambar/Buku andalan.png" class="logo-pin">Buku Andalan</a>
+            </div>
+            <div class="card-category2">
+                <a href="#"><img src="gambar/buku-internasional.png" class="logo-pin">Buku international</a>
+            </div>
+            <div class="card-category2">
+                <a href="#"><img src="gambar/e book.png" class="logo-pin">e Book</a>
+            </div>
+            <div class="card-category2">
+                <a href="#"><img src="gambar/majalah.png" class="logo-pin">Majalah</a>
+            </div>
+            <div class="card-category2">
+                <a href="#"><img src="gambar/jam.png" class="logo-pin">Acsesoris</a>
+            </div>
+            <div class="card-category2">
+                <a href="#"><img src="gambar/olahraga.png" class="logo-pin">Hobi & olahraga</a>
+            </div>
+        </div>
+        <div class="judul">
+            <h2>Official Store</h2>
+            <a href="#">lihat semuanya</a>
+        </div>
+        <div class="category">
+            <div class="card-category">
+                <a href="#"><img src="gambar/Elex_Media_Komputindo_Logo.svg.png" class="logo-pin">Mlex Media</a>
+            </div>
+            <div class="card-category">
+                <a href="#"><img src="gambar/m&c.jpg" class="logo-pin">M&C</a>
+            </div>
+            <div class="card-category">
+                <a href="#"><img src="gambar/mizan.png" class="logo-pin">Mizan</a>
+            </div>
+            <div class="card-category">
+                <a href="#"><img src="gambar/nas media.jpg" class="logo-pin">Nas Media</a>
+            </div>
+            <div class="card-category">
+                <a href="#"><img src="gambar/buana.jpg" class="logo-pin">buana</a>
+            </div>
+            <div class="card-category">
+                <a href="#"><img src="gambar/erlangga.jpg" class="logo-pin">Erlangga</a>
+            </div>
+            <div class="card-category">
+                <a href="#"><img src="gambar/grasindo.png" class="logo-pin">Grasindo</a>
+            </div>
+        </div><br><br>
+        <div class="iklan3">
+            <a href="#"><img src="gambar/iklan 4.png" class="banner-iklan"></a>
+        </div><br><br>
+        <div class="judul">
+            <h2>Buku Terlaris</h2>
+            <a href="#">lihat semuanya</a>
+        </div>
+        <div class="buku-terlaris">
+            <div class="card-buku">
+                <a href="#"><img src="https://down-id.img.susercontent.com/file/8086debb6987e3130451b23a1e0eb3b9" class="buku-laris"></a>
+                <strong>The Psychology Of Money</strong><br>
+                <small>Morgan Housel</small><br>
+                <small><del>120.000</del></small>
+                <small style="font-weight:bold ;">Rp 70.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/10/9/f14cb7cc-0142-46c7-bb4c-2a025d678a08.jpg" class="buku-laris"></a>
+                <strong>Sejarah Dunia Yg Disembunyikan</strong><br>
+                <small>Jonathan Black</small><br>
+                <small><del>200.000</del></small>
+                <small style="font-weight: bold;">Rp 110.000</small>
+            </div>
+            <div class="card-buku">
+                <a href="#"><img src="https://img.lazcdn.com/g/p/b19be641ea3a41afa93279199c4b5d18.jpg_720x720q80.jpg" class="buku-laris"></a>
+                <strong>The Principle Power</strong><br>
+                <small>Dion Yulianto</small><br>
+                <small><del>120.000</del></small>
+                <small style="font-weight: bold;">Rp 60.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://gerai.kompas.id/wp-content/uploads/2024/01/ginee_20240115184505109_2619654746.jpeg" class="buku-laris"></a>
+                <strong>Filosofi Teras</strong><br>
+                <small>Henri Manampiring</small><br><br>
+                <small><del>75.000</del></small>
+                <small style="font-weight: bold;">Rp 40.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://toko-muslim.com/images/product/2019/11/Buku-Ar-Rahiq-Al-Makhtum-Sirah-Nabawiyah-Sejarah-Hidup-Nabi-1-e1573048850842.jpg" class="buku-laris"></a>
+                <strong>Sirah Nabawiyah</strong><br>
+                <small>Syekh Shofiyurrahman</small><br>
+                <small><del>325.000</del></small>
+                <small style="font-weight: bold;">Rp 185.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-ltajm6pa9l6h6f" class="buku-laris"></a>
+                <strong>Trik FYP Tik Tok</strong><br>
+                <small>Leo geofani</small><br><br>
+                <small><del>325.000</del></small>
+                <small style="font-weight: bold;">Rp 285.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://gerai.kompas.id/wp-content/uploads/2024/03/ginee_20240313114344367_8997736118.jpeg" class="buku-laris"></a>
+                <strong>Filsafat Profesional</strong><br>
+                <small>F Budi Hardiman</small><br>
+                <small><del>299.000</del></small>
+                <small style="font-weight: bold;">Rp 99.000</small>
+            </div>
+        </div>
+        <div class="judul">
+            <h2>Majalah Terlaris</h2>
+            <a href="#">lihat semuanya</a>
+        </div>
+        <div class="buku-terlaris">
+            <div class="card-buku">
+                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH08_B.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH11_B.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://aktual.com/wp-content/uploads/2017/10/Majalah-Indonesia-Tatler-681x911.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH1201_B.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://s3-ap-southeast-1.amazonaws.com/ebook-previews/13442/51502/1.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2014MTH06_B_.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+            <div class="card-buku">
+                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2014MTH03_B_.jpg" class="buku-laris"></a>
+                <small><del>99.000</del></small>
+                <small style="font-weight: bold;">Rp 35.000</small>
+            </div>
+        </div>
+        <div class="judul">
+            <h2>Blog</h2>
+            <a href="#">lihat semuanya</a>
+        </div>
+        <div class="Koran-terlaris">
+            <div class="card-koran">
+            <a href="#"><img src="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2023/10/BLOG-BANNER-1-November-2023-Banner-Blog-AI-adalah-Teknologi-yang-dapat-Mempermudah-Kehidupan-Manusia.jpg" class="blog"></a>
+            <h4>AI adalah Teknologi yang dapat Mempermudah Kehidupan Manusia</h4>
+            <p>Artificial Intelligence (AI) adalah teknologi yang dapat memudahkan kehidupan manusia pada berbagai bidang pada saat ini.</p>
+            </div>
+            <div class="card-koran">
+            <a href="#"><img src="https://blog.prosa.ai/media/images/banner_2_1.original.jpg" class="blog"></a>
+            <h4>Indonesia Digital Outlook & Pentingnya Adopsi AI 2023</h4>
+            <p>Indonesia diproyeksikan akan menjadi pemimpin terdepan dalam adopsi Artificial Intelligence (AI) di ASEAN pada 2030 dan menjadi negara maju pada 2045.</p>
+            </div>
+            <div class="card-koran">
+            <a href="#"><img src="https://blog.prosa.ai/media/images/Group_8923.original.jpg" class="blog"></a>
+            <h4>Implementasi AI pada Industri di Indonesia</h4>
+            <p>Di Indonesia, penggunaan Artificial Intelligence (AI) mulai dikenal dan dipraktikkan di berbagai industri, berikut adalah beberapa contoh penggunaannya:</p>
+            </div>
+        </div>
+        <div class="header-bawah">
+                <a href="#"><img src="gambar/PP transparent.png" class="logo">EFZI BOOK</a>
+                <p>Toko buku online baru berkembang hehe, terpercaya di indonesia </p>
+        </div>
+        <div class="tootler">
+            <div class="isi">
+                <h4>Produk EFZI</h4>
+                <a href="#">EFZI Affiliatte</a>
+                <a href="#">Mitra EFZI</a>
+            </div>
+            <div class="isi">
+                <h4>Informasi Berbelanja</h4>
+                <a href="#">Berbelanja</a>
+                <a href="#">Pembayaran</a>
+                <a href="#">Pengiriman</a>
+            </div>
+            <div class="isi">
+                <h4>Tentang EFZI BOOK</h4>
+                <a href="#">Tentang Kami</a>
+                <a href="#">Toko Kami</a>
+            </div>
+            <div class="isi">
+                <h4>Lainnya</h4>
+                <a href="#">Blog</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Hubungi kami</a>
+                <a href="#">Kerja Sama</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
