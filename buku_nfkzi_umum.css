@@ -215,7 +215,7 @@
         color: rgb(82, 82, 82);
     }.card-buku{
         width: 170px;
-        height: 280px;
+        height: 300px;
         border: 1px solid rgb(200, 200, 200);
         border-radius: 10px;
         margin: 10px;
@@ -226,8 +226,34 @@
     .card-buku:hover{
         box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
     }
+    .ket{
+        display: flex;
+        justify-content: center;
+        align-items: start ;
+        flex-direction: column-reverse;
+    }
+    .detail{
+        border: 1px solid black;
+        width: 60px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: black;
+        margin-left: 3px;
+    }
+    .detail a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }  
+    .dtl{
+        display: flex;
+        padding: 5px;
+    }
     .buku-laris{
-        width: 150px;
+        width: 100%;
+        max-height:150px ;
     }.buku-terlaris{
         width: 100%;
         height: 350px;
@@ -242,7 +268,7 @@
         height: 40px;
         border: 0px solid black;
         justify-content: center;
-        align-items: end; 
+        align-items: center; 
      }.judul1 a{
         color: rgb(68, 68, 68);
     
@@ -259,43 +285,13 @@
         height: 40px;
         border: 0px solid black;
         justify-content: center;
-        align-items: end;
+        align-items: center;
     }.judul h2{
         width: 70%;
         height: 30px;
         font-size: 22px
     }
-    .Koran-terlaris{
-        width: 100%;
-        height: 420px;
-        border: 0px solid rgb(176, 176, 176);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .card-koran{
-        width: 400px;
-        height: 350px;
-        border: 1px solid rgb(167, 167, 167);
-        border-radius: 10px;
-        margin: 10px;
-        transition: box-shadow 0.3s ease;
-        cursor: pointer;
-    }
-    .card-koran:hover{
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-    }.blog{
-        width: 400px;
-        border-radius: 5px ;
-    }
-    .Koran-terlaris h4{
-        padding: 10px;
-    }
-    .Koran-terlaris p{
-        padding: 10px;
-        font-size: 11px;
-    }.header-bawah{
+    .header-bawah{
         display: flex;
         justify-content: space-around;
         align-items: center;

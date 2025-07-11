@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="latihan27css.css">
+    <link rel="stylesheet" href="home.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,95 +14,117 @@
         <div class="cc">
         <div class="header">
             <a href="#"><img src="gambar/PP transparent.png" alt="logotoko" class="logo">EFZI BOOK</a>
+            <form action="/search" method="get" class="search-form">
+                    <input class="input-form" type="search" name="query" placeholder="Cari sesuatu...">
+                    <button class="buttom-search" type="submit"><i class='bx bx-search-alt-2'></i></button>
+                  </form>
             <div class="masuk-daftar">
                   <div class="masuk">
-                    <a href="#">Masuk</a>
+                    <a href="login.html">Masuk</a>
                   </div>
                   <div class="masuk2">
-                    <a href="#">Daftar</a>
+                    <a href="register.html">Daftar</a>
             </div>
         </div>
         </div>
             
 <nav class="navbar-main">
     <ul class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li>
             <a href="#">Buku</a>
             <ul>
                 <li>
                     <a href="#">Fiksi</a>
                     <ul>
-                        <li><a href="#">manga</a></li>
-                        <li><a href="#">Komik</a></li>
-                        <li><a href="#">Manwa</a></li>
+                        <li><a href="buku_komik.html">Komik</a></li>
+                        <li><a href="buku_fiksi.html">cerpen</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">NonFiksi</a>
                     <ul>
-                        <li><a href="#">Kitab</a></li>
-                        <li><a href="#">Novel</a></li>
-                        <li><a href="#">Makalah</a></li>
+                        <li><a href="buku_islami.html">Islami</a></li>
+                        <li><a href="buku_nfksi_umum.html">Umum</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
-        <li><a href="#">Majalah</a></li>
-        <li><a href="#">Koran</a></li>
+        <li>
+            <a href="#">Majalah</a>
+            <ul>
+                <li>
+                    <a href="#">Umum</a>
+                    <ul>
+                        <li><a href="buku_mjlh_bisnis.html">Bisnis</a></li>
+                        <li><a href="buku_mjlh_inspirasi.html">Inspirasi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hobi</a>
+                    <ul>
+                        <li><a href="buku_mjlh_hobi_otomotif.html">Otomotif</a></li>
+                        <li><a href="buku_mjlh_hobi_olga.html">Olahraga</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="koran.html">Koran</a>
+        </li>
     </ul>
 </nav>
         </div>
         </div>
         <div class="judul1" id="buku-terlaris">
             <h2>Buku Terlaris</h2>
-            <a href="#">lihat semuanya</a>
+            <a href="buku_islami.html">lihat semuanya</a>
         </div>
         <div class="buku-terlaris" >
             <div class="card-buku">
-                <a href="#"><img src="https://down-id.img.susercontent.com/file/8086debb6987e3130451b23a1e0eb3b9" class="buku-laris"></a>
+                <a href="detail_buku_pshycologi.html"><img src="https://down-id.img.susercontent.com/file/8086debb6987e3130451b23a1e0eb3b9" class="buku-laris"></a>
                 <strong>The Psychology Of Money</strong><br>
                 <small>Morgan Housel</small><br>
                 <small><del>120.000</del></small>
                 <small style="font-weight:bold ;">Rp 70.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/10/9/f14cb7cc-0142-46c7-bb4c-2a025d678a08.jpg" class="buku-laris"></a>
+                <a href="detail_buku_sejarah.html"><img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/10/9/f14cb7cc-0142-46c7-bb4c-2a025d678a08.jpg" class="buku-laris"></a>
                 <strong>Sejarah Dunia Yg Disembunyikan</strong><br>
                 <small>Jonathan Black</small><br>
                 <small><del>200.000</del></small>
                 <small style="font-weight: bold;">Rp 110.000</small>
             </div>
             <div class="card-buku">
-                <a href="#"><img src="https://img.lazcdn.com/g/p/b19be641ea3a41afa93279199c4b5d18.jpg_720x720q80.jpg" class="buku-laris"></a>
+                <a href="detail_buku_priciples.html"><img src="https://img.lazcdn.com/g/p/b19be641ea3a41afa93279199c4b5d18.jpg_720x720q80.jpg" class="buku-laris"></a>
                 <strong>The Principle Power</strong><br>
                 <small>Dion Yulianto</small><br>
                 <small><del>120.000</del></small>
                 <small style="font-weight: bold;">Rp 60.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://gerai.kompas.id/wp-content/uploads/2024/01/ginee_20240115184505109_2619654746.jpeg" class="buku-laris"></a>
+                <a href="detail_buku_filosofi.html"><img src="https://gerai.kompas.id/wp-content/uploads/2024/01/ginee_20240115184505109_2619654746.jpeg" class="buku-laris"></a>
                 <strong>Filosofi Teras</strong><br>
                 <small>Henri Manampiring</small><br><br>
                 <small><del>75.000</del></small>
                 <small style="font-weight: bold;">Rp 40.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://toko-muslim.com/images/product/2019/11/Buku-Ar-Rahiq-Al-Makhtum-Sirah-Nabawiyah-Sejarah-Hidup-Nabi-1-e1573048850842.jpg" class="buku-laris"></a>
+                <a href="dtl_buku_sirah.html"><img src="https://toko-muslim.com/images/product/2019/11/Buku-Ar-Rahiq-Al-Makhtum-Sirah-Nabawiyah-Sejarah-Hidup-Nabi-1-e1573048850842.jpg" class="buku-laris"></a>
                 <strong>Sirah Nabawiyah</strong><br>
                 <small>Syekh Shofiyurrahman</small><br>
                 <small><del>325.000</del></small>
                 <small style="font-weight: bold;">Rp 185.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-ltajm6pa9l6h6f" class="buku-laris"></a>
+                <a href="detail_buku_fyp.html"><img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-ltajm6pa9l6h6f" class="buku-laris"></a>
                 <strong>Trik FYP Tik Tok</strong><br>
                 <small>Leo geofani</small><br><br>
                 <small><del>325.000</del></small>
                 <small style="font-weight: bold;">Rp 285.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://gerai.kompas.id/wp-content/uploads/2024/03/ginee_20240313114344367_8997736118.jpeg" class="buku-laris"></a>
+                <a href="detail_buku_filsafat.html"><img src="https://gerai.kompas.id/wp-content/uploads/2024/03/ginee_20240313114344367_8997736118.jpeg" class="buku-laris"></a>
                 <strong>Filsafat Profesional</strong><br>
                 <small>F Budi Hardiman</small><br>
                 <small><del>299.000</del></small>
@@ -111,16 +133,16 @@
         </div>
         <div class="judul" id="majalah-terlaris">
             <h2>Majalah Terlaris</h2>
-            <a href="#">lihat semuanya</a>
+            <a href="buku_mjlh_inspirasi.html">lihat semuanya</a>
         </div>
         <div class="buku-terlaris">
             <div class="card-buku">
-                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH08_B.jpg" class="buku-laris"></a>
+                <a href="detail_mjlh_Inspirasichiko.html"><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH08_B.jpg" class="buku-laris"></a>
                 <small><del>99.000</del></small>
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH11_B.jpg" class="buku-laris"></a>
+                <a href="detail_mjlh_Inspirasiandy.html"><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH11_B.jpg" class="buku-laris"></a>
                 <small><del>99.000</del></small>
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
@@ -130,45 +152,51 @@
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH1201_B.jpg" class="buku-laris"></a>
+                <a href="detail_mjlh_Inspirasichelsea.html"><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2015MTH1201_B.jpg" class="buku-laris"></a>
                 <small><del>99.000</del></small>
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://s3-ap-southeast-1.amazonaws.com/ebook-previews/13442/51502/1.jpg" class="buku-laris"></a>
+                <a href="detail_mjlh_Inspirasijoetaslim.html"><img src="https://s3-ap-southeast-1.amazonaws.com/ebook-previews/13442/51502/1.jpg" class="buku-laris"></a>
                 <small><del>99.000</del></small>
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2014MTH06_B_.jpg" class="buku-laris"></a>
+                <a href="detail_mjlh_Inspirasiferrysalim.html"><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2014MTH06_B_.jpg" class="buku-laris"></a>
                 <small><del>99.000</del></small>
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
             <div class="card-buku">
-                <a href=""><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2014MTH03_B_.jpg" class="buku-laris"></a>
+                <a href="detail_mjlh_Inspirasiputranababan.html"><img src="https://ebooks.gramedia.com/ebook-covers/13442/big_covers/ID_ININ2014MTH03_B_.jpg" class="buku-laris"></a>
                 <small><del>99.000</del></small>
                 <small style="font-weight: bold;">Rp 35.000</small>
             </div>
         </div>
         <div class="judul" id="Koran-terlaris">
             <h2>Koran</h2>
-            <a href="#">lihat semuanya</a>
+            <a href="koran.html">lihat semuanya</a>
         </div>
         <div class="Koran-terlaris" >
             <div class="card-koran">
-            <a href="#"><img src="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2023/10/BLOG-BANNER-1-November-2023-Banner-Blog-AI-adalah-Teknologi-yang-dapat-Mempermudah-Kehidupan-Manusia.jpg" class="blog"></a>
-            <h4>AI adalah Teknologi yang dapat Mempermudah Kehidupan Manusia</h4>
-            <p>Artificial Intelligence (AI) adalah teknologi yang dapat memudahkan kehidupan manusia pada berbagai bidang pada saat ini.</p>
+            <a href="detail_koran_Kamis.html"><img src="https://assetd.kompas.id/J1lmkkyEB11PGmb5klRodXU1c_c=/720x405/filters:format(webp)/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2024%2F02%2F06%2F9b6d4f2f-5b50-4ee7-8bd7-d24904ed768d_jpg.jpg" class="blog"></a>
+            <h4>Kepatuhan terhadap aturan jabatan di pertanyakan</h4>
+            <p>
+               Karena alasan pribadi, Letjen Novi Helmy Prasetya memutuskan  untuk mundur dari dirut bulog dan kembali berdinas di TNI
+            </p>
             </div>
             <div class="card-koran">
-            <a href="#"><img src="https://nusawork.com/blog/wp-content/uploads/sites/2/2023/11/5-1-grid-id.jpg" class="blog2"></a>
-            <h4>Dampak AI pada Pekerjaan di Masa Depan?</h4>
-            <p>Lantas, dengan cara berpikir Artificial Intelligence yang dibuat seperti manusia, bagaimana dampak teknologi ini pada pekerjaan di masa depan?</p>
+            <a href="detail_koran_minggu.html"><img src="https://assetd.kompas.id/IOBCaItyBDin3vGI1RiBTMBvS70=/720x405/filters:format(webp)/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2025%2F05%2F27%2F0e8df7fe-abf2-4a44-8f47-94ca4cb14f58_jpg.jpg" class="blog2"></a>
+            <h4>antar Lembaga Negara Mesti Saling Menghormati</h4>
+            <p>
+               Wacana Revisi UU MK pascaputusan soal pemisahan pemilu menampilkan ketegangan antar lembaga negara di ruang publik . seharusnya antar lembaga saling menghormati
+            </p>
             </div>
             <div class="card-koran">
-            <a href="#"><img src="https://nusawork.com/blog/wp-content/uploads/sites/2/2023/10/person-using-ai-tool-job-min-2048x1472.jpg" class="blog2"></a>
-            <h4>Kecerdasan Buatan Membantu Pekerjaan? Berikut 5 Alat AI Untuk Kamu!</h4>
-            <p>Selain ChatGPT, ternyata masih banyak tools berbasis Artificial Intelligence yang bisa digunakan secara gratis, apa saja? Berikut penjelasannya:</p>
+            <a href="detail_koran_Sabtu.html"><img src="https://assetd.kompas.id/qIK-29ZxEP5hYAlhdxmBAufBPXI=/720x405/filters:format(webp)/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2023%2F09%2F10%2F72aaa8cf-de08-4832-84f5-54b471049bec_jpg.jpg" class="blog2"></a>
+            <h4>Mengembalikan Manusia yang pudar</h4>
+            <p>
+                Akal imitasi mulai dimanfaatkan untukmenjalankan ragam program radio. Namun, ceruk pasar terbuka justru dari para audiens yang merindukan interaksi langsung
+            </p>
             </div>
         </div>
         <div class="header-bawah">

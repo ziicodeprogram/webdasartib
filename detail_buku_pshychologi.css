@@ -6,13 +6,12 @@
     }
     body{
            width: 100%;
-           height: 100vh; 
+           height: auto; 
     }
     .logo{
         width: 60px;
     }
     .cc{
-        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -95,9 +94,6 @@
     top: 0;
     left: 100%;
 }
-
-    
- 
     .header{
         display: flex;
         justify-content: space-around;
@@ -114,24 +110,6 @@
         font-size: 20px;
         text-decoration: none;
         color: rgb(0, 29, 132);
-    }
-    .search-form{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    .input-form{
-        margin: 10px;
-        border-radius: 50px;
-        width: 500px;
-        height: 50px;
-        padding: 20px;
-    }
-    .buttom-search{
-        width: 50px;
-        height: 50px;
-        background: transparent;
-        border: none;
     }
     .header i{
         font-size: 30px;
@@ -213,89 +191,98 @@
     .navbar a:hover{
         border-bottom: 1px solid rgb(70, 70, 70);
         color: rgb(82, 82, 82);
-    }.card-buku{
-        width: 170px;
-        height: 280px;
-        border: 1px solid rgb(200, 200, 200);
+    }
+    .paket1{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 40px;
+        border: px solid black;
+    }
+    .buku1 a img{
+        width: auto;
+        max-height: 360px;
+    }
+    .buku1{
+        width: 370px;
+        height: 400px;
+        border: px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 10px;
-        margin: 10px;
-        transition: box-shadow 0.3s ease;
-        cursor: pointer;
-        padding: 10px;
+        background-color: #b8b8b8;
     }
-    .card-buku:hover{
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    .judul-money{
+        border: px solid black;
+        width: 80%;
+        height: 20%;
+        margin-top: 30px;
     }
-    .buku-laris{
-        width: 150px;
-    }.buku-terlaris{
-        width: 100%;
-        height: 350px;
-        border: 0px solid black;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-    }.judul1{
-        padding-top: 150px;
-        display: flex;
-        width: 100%;
-        height: 40px;
-        border: 0px solid black;
-        justify-content: center;
-        align-items: end; 
-     }.judul1 a{
-        color: rgb(68, 68, 68);
-    
-    }.judul a{
-        color: rgb(68, 68, 68);
-    }
-    .judul1 h2{
-        width: 70%;
-        height: 30px;
-        font-size: 22px
-    }.judul{
-        display: flex;
-        width: 100%;
-        height: 40px;
-        border: 0px solid black;
-        justify-content: center;
-        align-items: end;
-    }.judul h2{
-        width: 70%;
-        height: 30px;
-        font-size: 22px
-    }
-    .Koran-terlaris{
-        width: 100%;
-        height: 420px;
-        border: 0px solid rgb(176, 176, 176);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .h2-1{
+        color: #6a6a6a;
         
     }
-    .card-koran{
-        width: 400px;
-        height: 350px;
-        border: 1px solid rgb(167, 167, 167);
+    .judul-money h2{
+        font-size: 35px;
+    }
+    .ket1{
+        padding-left: 30px;
+    }
+    .hemat{
+        border: px solid black;
+        display: flex;
+        justify-items:center ;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 10px;
         border-radius: 10px;
-        margin: 10px;
+        background-color: rgb(237, 237, 237);
+    }
+    .hemat p{
+        font-size: 15px;
+    }
+    .p1{
+        font-weight: 600;
+    }
+    .sinopsis{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+    }
+    .wadah-sinopsis{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .buy{
+        width: 200px;
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        border-radius: 8px;
+        background-color: rgb(0, 0, 124);
         transition: box-shadow 0.3s ease;
-        cursor: pointer;
     }
-    .card-koran:hover{
+    .buy a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+    .buy:hover{
         box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-    }.blog{
-        width: 400px;
-        border-radius: 5px ;
     }
-    .Koran-terlaris h4{
-        padding: 10px;
-    }
-    .Koran-terlaris p{
-        padding: 10px;
-        font-size: 11px;
-    }.header-bawah{
+     .header-bawah{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -337,9 +324,4 @@
         padding: 2px;
         color: black;
         font-size: 13px;
-    }
-    .blog2{
-        width: 400px;
-        border-radius: 5px ;
-        height: 212px;
     }
